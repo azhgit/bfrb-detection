@@ -1,6 +1,8 @@
 # Ignore large CSV files
 data/train.csv
-data/train_ingested.csv
+data/test.csv
+data/test_demographics.csv
+data/train_demographics.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
