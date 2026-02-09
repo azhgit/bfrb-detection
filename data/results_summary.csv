@@ -1,0 +1,4 @@
+﻿Model,F1 Score,F1 %,Parameters,Efficiency,Performance
+FFT-MLP,0.8337,83.37%,10306,8.0894624490588e-05,Passing
+CNN-BiLSTM,0.9141,91.41%,684610,1.3352127488643169e-06,Very Good
+Late Fusion,0.9193,91.93%,694916,1.3228937022604172e-06,Very Good

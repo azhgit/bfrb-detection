@@ -1,24 +1,116 @@
-# Data
-*.csv
-data/
-!data/README.md
-!data/train_sample.csv
-!data/test_sample.csv
+train.csv
+test.csv
+data/train.csv
+data/test.csv
+*.zip
 
-# Models
+# ============================================
+# Preprocessed Data Files
+# ============================================
 *.pkl
-*.pth
+data/*_preprocessed.pkl
+data/scaler.pkl
+data/X_train_preprocessed.pkl
+data/X_val_preprocessed.pkl
+data/X_test_preprocessed.pkl
+data/y_train_preprocessed.pkl
+data/y_val_preprocessed.pkl
 
+# ============================================
+# BUT DO UPLOAD THESE MODEL & RESULTS FILES
+# ============================================
+!*.pth
+!data/*.pth
+
+!data/final_results.csv
+!data/results_summary.csv
+!data/final_evaluation_visualization.png
+!data/model_visualization_final.png
+!data/*.png
+
+!data/README.md
+
+# ============================================
 # Virtual Environment
+# ============================================
 venv/
 env/
+ENV/
+.venv
 
+# ============================================
 # Python
+# ============================================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Jupyter
+# ============================================
+# Jupyter Notebook
+# ============================================
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/
 
-# OS
+# ============================================
+# IDE & Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# Operating System
+# ============================================
+.DS_Store
+Thumbs.db
+.directory
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+*.log
+*.cache
+.cache/
+
+# ============================================
+# Credentials (IMPORTANT!)
+# ============================================
+kaggle.json
+config.ini
+credentials.json
+secrets.json
