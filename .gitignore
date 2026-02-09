@@ -1,20 +1,34 @@
-# ============================================
-# Data Files (too large, download from source)
-# ============================================
-*.csv
-data/
-!data/README.md
-!data/train_sample.csv
-!data/test_sample.csv
+train.csv
+test.csv
+data/train.csv
+data/test.csv
+*.zip
 
 # ============================================
-# Model & Intermediate Files
+# Preprocessed Data Files
 # ============================================
 *.pkl
-*.pth
-*.h5
-*.model
-*.joblib
+data/*_preprocessed.pkl
+data/scaler.pkl
+data/X_train_preprocessed.pkl
+data/X_val_preprocessed.pkl
+data/X_test_preprocessed.pkl
+data/y_train_preprocessed.pkl
+data/y_val_preprocessed.pkl
+
+# ============================================
+# BUT DO UPLOAD THESE MODEL & RESULTS FILES
+# ============================================
+!*.pth
+!data/*.pth
+
+!data/final_results.csv
+!data/results_summary.csv
+!data/final_evaluation_visualization.png
+!data/model_visualization_final.png
+!data/*.png
+
+!data/README.md
 
 # ============================================
 # Virtual Environment
@@ -47,6 +61,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # ============================================
 # Jupyter Notebook
